@@ -1,0 +1,23 @@
+/* Register.css */
+
+/* Stiluri pentru containerul general */
+.lr-container {
+    display: flex;
+    justify-content: center; /* Aliniere pe axa orizontală */
+    align-items: center; /* Aliniere pe axa verticală */
+    height: 89vh;
+    background-image: url('./salam.jpg'); /* Adaugă imaginea de fundal */
+    background-size: cover; /* Ajustează dimensiunea imaginii pentru a umple întregul container */
+    background-position: center; /* Centrare imagine */
+}
+
+/* Stiluri pentru formularul de înregistrare */
+.register-container {
+    max-width: 400px; /* Ajustează lățimea maximă a containerului */
+    margin: auto; /* Centrează containerul pe orizontală */
+    padding: 20px; /* Spațiere în interiorul formularului */
+    border: none; /* Elimină bordura */
+    border-radius: 5px; /* Colțuri rotunjite */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundal semi-transparent alb */
+    /* Elimină poziționarea absolută */
+}

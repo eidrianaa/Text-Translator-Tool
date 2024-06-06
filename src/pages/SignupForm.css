@@ -1,0 +1,31 @@
+/* SignupForm.css */
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px; /* Ajustați lățimea maximă a formularului */
+    max-height: 800px;
+    margin: auto;
+}
+
+.signup-form input {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signup-form button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,14 @@
+/* Stiluri specifice pentru pagina History */
+.history-page {
+    height: 100vh; /* Folosește întreaga înălțime a viewport-ului */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .history-page canvas {
+    max-height: 90vh; /* Ajustează înălțimea canvas-ului la 90% din înălțimea viewport-ului */
+  }
+  

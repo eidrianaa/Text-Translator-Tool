@@ -1,0 +1,47 @@
+/* Home.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.text-container {
+    text-align: center;
+}
+
+.main-title {
+    font-family: 'Jersey 15', sans-serif;
+    font-size: 3rem; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Add some space below the title */
+    opacity: 0; /* Initially set opacity to 0 */
+    animation: renderTitle 2s steps(60, end) forwards; /* Apply renderTitle animation */
+}
+
+.sub-title {
+    font-family: 'Jersey 15', sans-serif;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    opacity: 0; /* Initially set opacity to 0 */
+    animation: renderSubTitle 6s steps(60, end) forwards; /* Apply renderSubTitle animation */
+}
+
+/* Animation keyframes */
+@keyframes renderTitle {
+    0% {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    100% {
+        opacity: 1; /* End with opacity 1 */
+    }
+}
+
+@keyframes renderSubTitle {
+    0% {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    100% {
+        opacity: 1; /* End with opacity 1 */
+    }
+}

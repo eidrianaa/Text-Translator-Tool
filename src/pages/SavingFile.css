@@ -1,0 +1,55 @@
+/* Modal container */
+.modal {
+  position: fixed; /* Fixed positioning relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full viewport width */
+  height: 100%; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 1000; /* Ensures it's above other elements */
+}
+
+/* Modal content box */
+.modal-content {
+  background: white; /* White background */
+  padding: 20px; /* Padding inside the modal */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: auto; /* Auto width, can be adjusted as needed */
+  z-index: 1001; /* Above the overlay */
+}
+
+/* Button styling to match the green on white thematic */
+button {
+  background-color: green; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding for size */
+  margin: 10px 5px; /* Margin for spacing */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button hover state */
+button:hover {
+  background-color: darkgreen; /* Darker green on hover */
+}
+
+/* Title styling for the modal */
+.modal-title {
+  font-weight: bold; /* Bold text */
+  font-size: 1.5em; /* Larger font size */
+  color: green; /* Green color */
+  margin-bottom: 20px; /* Spacing below the title */
+  text-align: center; /* Centered text */
+}
+
+/* Container for buttons to ensure proper spacing */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between; /* Space buttons evenly */
+  width: 100%; /* Full width of the modal content */
+}

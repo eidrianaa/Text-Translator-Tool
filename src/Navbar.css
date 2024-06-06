@@ -1,0 +1,114 @@
+.app__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-black);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--color-grey); /* Add border style */
+}
+
+/* Rest of your CSS styles */
+
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app__navbar-logo img {
+  width: 150px;
+}
+
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.app__navbar-links li {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.app__navbar-links li:hover {
+  color: var(--color-grey);
+}
+
+.app__navbar-login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.app__navbar-login a {
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.app__navbar-login a:hover {
+  border-bottom: 1px solid var(--color-golden);
+}
+
+.app__navbar-login div {
+  width: 1px;
+  height: 30px;
+  background-color: var(--color-grey);
+}
+
+.app__navbar-smallscreen {
+  position: relative; /* Ensure relative positioning for absolute children */
+}
+
+.app__menu-links {
+  position: absolute;
+  top: calc(100% + 10px); /* Adjust the distance from the button */
+  left: 0;
+  background-color: var(--color-black);
+  padding: 10px;
+  border-radius: 5px;
+  display: none; /* Initially hide menu links */
+  margin-left: -2rem;
+}
+
+.app__menu-links li {
+  margin-bottom: 5px;
+}
+
+.app__menu-links li a {
+  text-decoration: none;
+}
+
+.app__menu-links li a:hover {
+  color: var(--color-grey);
+}
+
+.app__navbar-smallscreen.show-menu .app__menu-links {
+  display: flex; /* Show menu links when menu icon is clicked */
+  flex-direction: column; /* Align menu links vertically */
+  position: absolute; /* Ensure menu links position relative to the navbar */
+  top: calc(100% + 10px); /* Adjust the distance from the button */
+  left: 0;
+}
+
+/* Default styles */
+body {
+  background-color: white; /* Default background color */
+  color: black; /* Default text color */
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background: var(--color-black);
+  color: white;
+}
+
+/* Light mode styles */
+.light-mode {
+  background-color: white;
+  color: black;
+}
